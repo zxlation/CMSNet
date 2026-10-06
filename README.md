@@ -12,6 +12,7 @@ It is designed to improve cross-modal feature interaction for medical image reco
 </p>
 
 **Paper**: Cross-Modal Affinity Learning for Medical Image Diagnosis with Knowledge-Guided Adaptive Fusion
+
 **Authors**: Xiaole Zhao, Wenjia Yang, Jinghui Yang, Zhenyu Wu, Ao Luo, Yan Yang, Hua Ai
 
 ---
