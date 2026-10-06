@@ -23,6 +23,7 @@ Multimodal medical images provide complementary information for diagnosis, but e
 
 CMSNet addresses this problem through a progressive cross-modal reasoning framework. Given paired medical images from different modalities, CMSNet contains two modality-specific branches and a cross-modal fusion branch. The network is composed of multiple stages, with each stage containing an FAA module and a KAF module.
 
+---
 ## 🔍 Method
 
 ### 1. Feature Affinity Attention (FAA)
@@ -46,6 +47,7 @@ DRHead combines two complementary reasoning pathways:
 
 For the SPC dataset, the rule-based pathway is explicitly grounded in the seven-point checklist annotations. For datasets without such auxiliary annotations, including BraTS2019 and AMD, the corresponding pathway is learned as a latent concept pathway.
 
+---
 ## 📊 Supported Datasets
 
 CMSNet is evaluated on three public multimodal medical image datasets.
@@ -56,6 +58,7 @@ CMSNet is evaluated on three public multimodal medical image datasets.
 |BraTS2019| Brain tumor grading | T1ce + FLAIR | 5-fold cross-validation |
 |   AMD   | Macular degeneration classification | CFP + OCT | Official splitA |
 
+---
 ## ⚙️ Installation
 
 ### Requirements
@@ -87,59 +90,37 @@ pip install pandas numpy tqdm matplotlib scikit-learn
 ```
 ---
 
-
-
-
-
-
-## 项目结构
-
+## 📁 Repository Structure
 ```
 CMSNet/
-├── main.py           # 训练入口
-├── test.py           # 测试 / 推理入口
-├── model.py          # 网络结构（MLCNN）
-├── dataloader.py     # 数据加载与增强
-├── dependency.py     # 全局配置（路径、超参数等）
-├── evaluate.py       # 评估指标
-├── require.sh        # 依赖安装脚本
-└── release_v0/       # 数据集划分索引与元信息
+├── main.py           # training
+├── test.py           # testing
+├── model.py          # network structures
+├── dataloader.py     # data loading and augmentation
+├── dependency.py     # Global configuration (paths, hyperparameters, etc.
+├── evaluate.py       # evaluation matrics
+├── require.sh        # dependencies
+└── release_v0/       # dataset splitting and metadata
 ```
-
-训练与测试均通过 `dependency.py` 中的配置项控制，无需额外命令行参数。
+Both training and testing are controlled by configurations in `dependency.py`, without additional command-line parameters.
 
 ---
 
-## 环境依赖
+## 📈 Results
 
-建议使用 **Python 3.8+** 与 **CUDA** 环境。
 
-### 安装
 
-在 `CMSNet` 目录下执行：
+## 🔬 Visualization
 
-```bash
-pip install torch torchvision
-bash require.sh
-pip install pandas numpy tqdm matplotlib scikit-learn
-```
 
----
+## 🙏 Acknowledgements
+We thank the authors of the publicly available datasets and related open-source projects used in this work.
 
-## 训练
+## 📬 Contact
+For questions, discussions, or potential collaborations, please open an issue in this repository or contact the authors.
+Repository: https://github.com/zxlation/CMSNet
 
-在 `CMSNet` 目录下运行：
 
-```bash
-python main.py
-```
 
----
 
-## 测试
 
-```bash
-python test.py
-```
-
----
