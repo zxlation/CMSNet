@@ -56,7 +56,7 @@ CMSNet is evaluated on three public multimodal medical image datasets.
 
 | Dataset | TasK | Modalities | Evaluation |
 |---------|------|------------|------------|
-|   SPC   | Skin lesion diagnosis | Clinical + Dermoscopic images | Official train/validation/test split |
+|   SPC   | Skin lesion diagnosis | Clinical + Dermoscopic images | Official train/valid/test split |
 |BraTS2019| Brain tumor grading | T1ce + FLAIR | 5-fold cross-validation |
 |   AMD   | Macular degeneration classification | CFP + OCT | Official splitA |
 
