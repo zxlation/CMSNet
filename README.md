@@ -110,7 +110,7 @@ Both training and testing are controlled by configurations in `dependency.py`, w
 ---
 
 ## 📈 Results
-CMSNet achieves an average accuracy of 76.2% across the eight SPC tasks, including the seven-point inspection tasks and the primary diagnosis task.
+CMSNet achieves an average accuracy of 76.2% across the eight SPC tasks, including the seven-point checkpoint tasks and the primary diagnosis task.
 <p align="center">
   <img src="figures/result1.png" width="100%">
 </p>
