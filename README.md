@@ -1,9 +1,13 @@
-# CMSNet
+# CMSNet: Cross-Modal Affinity Learning for Medical Image Diagnosis with Knowledge-Guided Adaptive Fusion
 
-基于 **Seven-Point Checklist（7 点检查法）** 数据集的多模态皮肤病变分类项目。模型同时利用 **临床照片（clinical）** 与 **皮肤镜图像（dermoscopy）**，联合预测：
+This repository provides the official implementation of CMSNet, a cross-modal synergy network for multimodal medical image diagnosis. T
 
-- **诊断类别**（5 类）：痣、基底细胞癌、黑色素瘤、其他、脂溢性角化
-- **七点检查特征**（7 项）：色素网络、条纹、色素沉着、退行结构、点与球、蓝白幕、血管结构
+It is designed to improve cross-modal feature interaction and clinical interpretability through three key components:
+1. **Feature Affinity Attention (FAA)** for modeling higher-order cross-modal feature affinity from intra-modal attention.
+2. **Knowledge-guided Adaptive Fusion (KAF)** for progressively fusing multimodal features under the guidance of an evolving knowledge state.
+3. **Dual-Reasoning Head (DRHead)** for combining rule-based reasoning with vision perception.
+
+<p align="center"> <img src="figures/framework.png" width="90%"> </p>
 
 ---
 
