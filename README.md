@@ -117,9 +117,20 @@ Performance comparison of our CMSNet with more advanced backbones on SPC:
   <img src="figures/result2.png" width="100%">
 </p>
 
+---
+## 📦 Pretrained Models
+Pretrained checkpoints will be provided here:
+| Dataset |  Model |     Download  |
+|---------|--------|---------------|
+|    SPC  | CMSNet | [Coming soon] |
+|BraTS2019| CMSNet | [Coming soon] |
+|   AMD   | CMSNet | [Coming soon] |
+
+---
 ## 🙏 Acknowledgements
 We thank the authors of the publicly available datasets and related open-source projects used in this work.
 
+---
 ## 📬 Contact
 For questions, discussions, or potential collaborations, please open an issue in this repository or contact the authors.
 Repository: https://github.com/zxlation/CMSNet
