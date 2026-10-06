@@ -24,6 +24,7 @@ Multimodal medical images provide complementary information for diagnosis, but e
 CMSNet addresses this problem through a progressive cross-modal reasoning framework. Given paired medical images from different modalities, CMSNet contains two modality-specific branches and a cross-modal fusion branch. The network is composed of multiple stages, with each stage containing an FAA module and a KAF module.
 
 ---
+
 ## 🔍 Method
 
 ### 1. Feature Affinity Attention (FAA)
@@ -48,6 +49,7 @@ DRHead combines two complementary reasoning pathways:
 For the SPC dataset, the rule-based pathway is explicitly grounded in the seven-point checklist annotations. For datasets without such auxiliary annotations, including BraTS2019 and AMD, the corresponding pathway is learned as a latent concept pathway.
 
 ---
+
 ## 📊 Supported Datasets
 
 CMSNet is evaluated on three public multimodal medical image datasets.
@@ -59,6 +61,7 @@ CMSNet is evaluated on three public multimodal medical image datasets.
 |   AMD   | Macular degeneration classification | CFP + OCT | Official splitA |
 
 ---
+
 ## ⚙️ Installation
 
 ### Requirements
@@ -118,6 +121,7 @@ Performance comparison of our CMSNet with more advanced backbones on SPC:
 </p>
 
 ---
+
 ## 📦 Pretrained Models
 Pretrained checkpoints will be provided here:
 | Dataset |  Model |     Download  |
@@ -127,10 +131,12 @@ Pretrained checkpoints will be provided here:
 |   AMD   | CMSNet | [Coming soon] |
 
 ---
+
 ## 🙏 Acknowledgements
 We thank the authors of the publicly available datasets and related open-source projects used in this work.
 
 ---
+
 ## 📬 Contact
 For questions, discussions, or potential collaborations, please open an issue in this repository or contact the authors.
 Repository: https://github.com/zxlation/CMSNet
