@@ -46,6 +46,52 @@ DRHead combines two complementary reasoning pathways:
 
 For the SPC dataset, the rule-based pathway is explicitly grounded in the seven-point checklist annotations. For datasets without such auxiliary annotations, including BraTS2019 and AMD, the corresponding pathway is learned as a latent concept pathway.
 
+## 📊 Supported Datasets
+
+CMSNet is evaluated on three public multimodal medical image datasets.
+
+| Dataset | TasK | Modalities | Evaluation |
+|---------|------|------------|------------|
+|   SPC   | Skin lesion diagnosis | Clinical + Dermoscopic images | Official train/validation/test split |
+|BraTS2019| Brain tumor grading | T1ce + FLAIR | 5-fold cross-validation |
+|   AMD   | Macular degeneration classification | CFP + OCT | Official splitA |
+
+## ⚙️ Installation
+
+### Requirements
+
+The implementation is developed with:
+- Python 3.8+
+- PyTorch 2.9.0
+- compatible CUDA
+- NVIDIA RTX 3090 GPU
+
+### Setup
+Clone this repository:
+```
+git clone https://github.com/wjyang643/CMSNet.git
+
+cd CMSNet
+```
+Create the environment:
+```
+conda create -n cmsnet python=3.x
+
+conda activate cmsnet
+```
+Install the required packages:
+```bash
+pip install torch torchvision
+bash require.sh
+pip install pandas numpy tqdm matplotlib scikit-learn
+```
+---
+
+
+
+
+
+
 ## 项目结构
 
 ```
