@@ -2,12 +2,17 @@
 
 This repository provides the official implementation of CMSNet, a cross-modal synergy network for multimodal medical image diagnosis. T
 
-It is designed to improve cross-modal feature interaction and clinical interpretability through three key components:
+It is designed to improve cross-modal feature interaction for medical image recognition and clinical transparency for diagnostic decision-making through three key components:
 1. **Feature Affinity Attention (FAA)** for modeling higher-order cross-modal feature affinity from intra-modal attention.
 2. **Knowledge-guided Adaptive Fusion (KAF)** for progressively fusing multimodal features under the guidance of an evolving knowledge state.
 3. **Dual-Reasoning Head (DRHead)** for combining rule-based reasoning with vision perception.
 
-<p align="center"> <img src="figures/framework.png" width="90%"> </p>
+<p align="center">
+  <img src="figures/framework.png" width="90%">
+</p>
+
+**Paper**: Cross-Modal Affinity Learning for Medical Image Diagnosis with Knowledge-Guided Adaptive Fusion
+**Authors**: Xiaole Zhao, Wenjia Yang, Jinghui Yang, Zhenyu Wu, Ao Luo, Yan Yang, Hua Ai
 
 ---
 
