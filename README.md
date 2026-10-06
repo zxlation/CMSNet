@@ -23,6 +23,28 @@ Multimodal medical images provide complementary information for diagnosis, but e
 
 CMSNet addresses this problem through a progressive cross-modal reasoning framework. Given paired medical images from different modalities, CMSNet contains two modality-specific branches and a cross-modal fusion branch. The network is composed of multiple stages, with each stage containing an FAA module and a KAF module.
 
+## 🔍 Method
+
+### 1. Feature Affinity Attention (FAA)
+
+FAA models the affinity between different modalities based on their intra-modal attention structures.
+
+Unlike conventional co-attention mechanisms that directly construct a shared cross-modal correlation matrix, FAA derives cross-modal affinity from modality-specific attention maps. This enables higher-order interaction between multimodal features.
+
+### 2. Knowledge-guided Adaptive Fusion (KAF)
+
+KAF progressively integrates: 1) the current clinical feature, 2) the current dermoscopic feature, and 3) the fused feature from the previous stage. The fusion process is guided by a latent knowledge state that evolves throughout the network.
+
+The knowledge state provides top-down guidance for feature fusion, while the resulting fused representation is used to update the knowledge state, forming a closed-loop collaborative mechanism.
+
+### 3. Dual-Reasoning Head (DRHead)
+
+DRHead combines two complementary reasoning pathways:
+
+- **Rule-based Pathway (RP)**: incorporates structured diagnostic criteria.
+- **Vision-based Pathway (VP)**: performs diagnosis directly from learned visual representations.
+
+For the SPC dataset, the rule-based pathway is explicitly grounded in the seven-point checklist annotations. For datasets without such auxiliary annotations, including BraTS2019 and AMD, the corresponding pathway is learned as a latent concept pathway.
 
 ## 项目结构
 
