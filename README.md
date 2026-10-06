@@ -17,6 +17,13 @@ It is designed to improve cross-modal feature interaction for medical image reco
 
 ---
 
+## ✨ Overview
+
+Multimodal medical images provide complementary information for diagnosis, but effectively exploiting the interaction between different modalities remains challenging. Existing approaches often perform independent feature extraction followed by feature fusion, which may fail to capture fine-grained cross-modal relationships. 
+
+CMSNet addresses this problem through a progressive cross-modal reasoning framework. Given paired medical images from different modalities, CMSNet contains two modality-specific branches and a cross-modal fusion branch. The network is composed of multiple stages, with each stage containing an FAA module and a KAF module.
+
+
 ## 项目结构
 
 ```
