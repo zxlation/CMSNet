@@ -8,7 +8,7 @@ It is designed to improve cross-modal feature interaction for medical image reco
 3. **Dual-Reasoning Head (DRHead)** for combining rule-based reasoning with vision perception.
 
 <p align="center">
-  <img src="figures/framework.png" width="90%">
+  <img src="figures/framework.png" width="100%">
 </p>
 
 **Paper**: Cross-Modal Affinity Learning for Medical Image Diagnosis with Knowledge-Guided Adaptive Fusion
@@ -109,16 +109,13 @@ Both training and testing are controlled by configurations in `dependency.py`, w
 ## 📈 Results
 CMSNet achieves an average accuracy of 76.2% across the eight SPC tasks, including the seven-point inspection tasks and the primary diagnosis task.
 <p align="center">
-  <img src="figures/result1.png" width="90%">
+  <img src="figures/result1.png" width="100%">
 </p>
 
 Performance comparison of our CMSNet with more advanced backbones on SPC:
 <p align="center">
-  <img src="figures/result2.png" width="90%">
+  <img src="figures/result2.png" width="100%">
 </p>
-
-## 🔬 Visualization
-
 
 ## 🙏 Acknowledgements
 We thank the authors of the publicly available datasets and related open-source projects used in this work.
